@@ -3,8 +3,8 @@ import CreateLink from "./CreateLink";
 import Header from "./Header";
 import LinkList from "./LinkList";
 import Login from "./Login";
-
 import { Route, Routes } from "react-router-dom";
+import Search from "./Search";
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/" element={<LinkList />} />
           <Route path="/create" element={<CreateLink />} />
           <Route path="/login" element={<Login></Login>}></Route>
+          <Route path = "/search" element={<Search></Search>} />
         </Routes>
       </div>
     </div>
